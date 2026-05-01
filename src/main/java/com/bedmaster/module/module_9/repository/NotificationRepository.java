@@ -1,8 +1,8 @@
-package com.bedmaster.notification.repository;
+package com.bedmaster.module.module_9.repository;
 
-import com.bedmaster.notification.entity.Notification;
-import com.bedmaster.notification.enums.Category;
-import com.bedmaster.notification.enums.Status;
+import com.bedmaster.module.module_9.entity.Notification;
+import com.bedmaster.module.module_9.enums.Category;
+import com.bedmaster.module.module_9.enums.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

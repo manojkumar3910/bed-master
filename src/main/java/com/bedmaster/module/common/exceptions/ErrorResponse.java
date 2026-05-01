@@ -1,4 +1,4 @@
-package com.bedmaster.notification.exception;
+package com.bedmaster.module.common.exceptions;
 
 import java.time.LocalDateTime;
 

@@ -1,7 +1,7 @@
-package com.bedmaster.notification.dto;
+package com.bedmaster.module.module_9.dto;
 
-import com.bedmaster.notification.enums.Category;
-import com.bedmaster.notification.enums.Status;
+import com.bedmaster.module.module_9.enums.Category;
+import com.bedmaster.module.module_9.enums.Status;
 
 import java.time.LocalDateTime;
 

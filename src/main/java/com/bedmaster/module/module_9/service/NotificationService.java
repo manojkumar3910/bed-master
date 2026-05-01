@@ -1,13 +1,12 @@
-package com.bedmaster.notification.service;
-
-import com.bedmaster.notification.dto.NotificationRequestDTO;
-import com.bedmaster.notification.dto.NotificationResponseDTO;
-import com.bedmaster.notification.entity.Notification;
-import com.bedmaster.notification.enums.Category;
-import com.bedmaster.notification.enums.Status;
-import com.bedmaster.notification.exception.ResourceNotFoundException;
-import com.bedmaster.notification.mapper.NotificationMapper;
-import com.bedmaster.notification.repository.NotificationRepository;
+package com.bedmaster.module.module_9.service;
+import com.bedmaster.module.module_9.dto.NotificationRequestDTO;
+import com.bedmaster.module.module_9.dto.NotificationResponseDTO;
+import com.bedmaster.module.module_9.entity.Notification;
+import com.bedmaster.module.module_9.enums.Category;
+import com.bedmaster.module.module_9.enums.Status;
+import com.bedmaster.module.common.exceptions.ResourceNotFoundException;
+import com.bedmaster.module.module_9.mapper.NotificationMapper;
+import com.bedmaster.module.module_9.repository.NotificationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

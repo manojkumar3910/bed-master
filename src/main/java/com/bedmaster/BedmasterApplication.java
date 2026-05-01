@@ -8,6 +8,7 @@ public class BedmasterApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BedmasterApplication.class, args);
+		System.out.println("STARTED");
 	}
 
 }

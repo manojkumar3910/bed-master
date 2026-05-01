@@ -1,4 +1,4 @@
-package com.bedmaster.notification.enums;
+package com.bedmaster.module.module_9.enums;
 
 // Classifies which workflow event produced a notification.
 // Stored as STRING in the database so column values remain human-readable.

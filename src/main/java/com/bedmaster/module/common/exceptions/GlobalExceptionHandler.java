@@ -1,4 +1,4 @@
-package com.bedmaster.notification.exception;
+package com.bedmaster.module.common.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 // Intercepts exceptions thrown anywhere in the controller layer and converts them into
 // structured JSON error responses instead of letting Spring return its default HTML error page.
-@RestControllerAdvice
+@RestControllerAdvice()
 public class GlobalExceptionHandler {
 
     // Handles the case where a Notification (or any other entity) cannot be found by its ID.
@@ -27,6 +27,22 @@ public class GlobalExceptionHandler {
                 request.getRequestURI()
         );
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(body);
+    }
+
+    // Handles business rule violations — e.g. releasing a bed before discharge is completed.
+    // Returns HTTP 400 Bad Request since the client sent a request that violates domain rules.
+    @ExceptionHandler(BusinessRuleViolationException.class)
+    public ResponseEntity<ErrorResponse> handleBusinessRuleViolationException(
+            BusinessRuleViolationException ex, HttpServletRequest request) {
+
+        ErrorResponse body = new ErrorResponse(
+                LocalDateTime.now(),
+                HttpStatus.BAD_REQUEST.value(),
+                HttpStatus.BAD_REQUEST.getReasonPhrase(),
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
     }
 
     // Catch-all handler for any unexpected exception not handled by a more specific method above.

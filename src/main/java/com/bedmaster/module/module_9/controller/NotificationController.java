@@ -1,8 +1,8 @@
-package com.bedmaster.notification.controller;
+package com.bedmaster.module.module_9.controller;
 
-import com.bedmaster.notification.dto.NotificationRequestDTO;
-import com.bedmaster.notification.dto.NotificationResponseDTO;
-import com.bedmaster.notification.service.NotificationService;
+import com.bedmaster.module.module_9.dto.NotificationRequestDTO;
+import com.bedmaster.module.module_9.dto.NotificationResponseDTO;
+import com.bedmaster.module.module_9.service.NotificationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.bedmaster.notification.exception;
+package com.bedmaster.module.common.exceptions;
 
 // Thrown when a requested resource (e.g. Notification) cannot be found in the database.
 // Extends RuntimeException so Spring does not require callers to declare it with throws.

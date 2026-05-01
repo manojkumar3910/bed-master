@@ -1,7 +1,7 @@
-package com.bedmaster.notification.entity;
+package com.bedmaster.module.module_9.entity;
 
-import com.bedmaster.notification.enums.Category;
-import com.bedmaster.notification.enums.Status;
+import com.bedmaster.module.module_9.enums.Category;
+import com.bedmaster.module.module_9.enums.Status;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 

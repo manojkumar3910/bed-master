@@ -1,8 +1,8 @@
-package com.bedmaster.notification.mapper;
+package com.bedmaster.module.module_9.mapper;
 
-import com.bedmaster.notification.dto.NotificationRequestDTO;
-import com.bedmaster.notification.dto.NotificationResponseDTO;
-import com.bedmaster.notification.entity.Notification;
+import com.bedmaster.module.module_9.dto.NotificationRequestDTO;
+import com.bedmaster.module.module_9.dto.NotificationResponseDTO;
+import com.bedmaster.module.module_9.entity.Notification;
 import org.springframework.stereotype.Component;
 
 // Responsible for converting between the Notification JPA entity and the request/response DTOs.

@@ -1,4 +1,4 @@
-package com.bedmaster.notification.integration;
+package com.bedmaster.module.module_9.integration;
 
 // -----------------------------------------------------------------------------
 // Integration snippet — paste the relevant parts into your existing EvsService.
@@ -6,8 +6,8 @@ package com.bedmaster.notification.integration;
 // Assumes you can resolve the BedManager's userId from UserRepository or similar.
 // -----------------------------------------------------------------------------
 
-import com.bedmaster.notification.enums.Category;
-import com.bedmaster.notification.service.NotificationService;
+import com.bedmaster.module.module_9.enums.Category;
+import com.bedmaster.module.module_9.service.NotificationService;
 
 // ── Constructor injection (add to EvsService) ─────────────────────────────────
 //
